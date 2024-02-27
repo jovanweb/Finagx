@@ -1,0 +1,365 @@
+
+.hero {
+    background-image: url(../images/hero-bgr.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+    padding: 330px 0 110px;
+    display: flex;
+    align-items: flex-end;
+
+    .pattern {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%,0);
+        min-width: 800px;
+    }
+
+    h1 {
+        font-weight: 900;
+    }
+
+    p {
+        margin-bottom: 40px;
+    }
+
+    ul {
+        margin-bottom: 0;
+    }
+
+    .btn-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 40px;
+    }
+
+    ul {
+        gap: 20px;
+    }
+
+    .o-container {
+        position: relative;
+        z-index: 5;
+    }
+
+    @media(max-width: 1550px) {
+        padding: 200px 0 110px;
+        
+    }
+
+    @media(max-width: 991px) {
+        h1 {
+            font-size: 50px;
+            line-height: 1.1;
+        }
+    }
+
+    @media(max-width: 768px) {
+        padding-top: 200px;
+        padding-bottom: 20px;
+        
+        .pattern {
+            min-width: 320px;
+        }
+
+        h1 {
+            font-size: 34px;
+            line-height: 1.1;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .btn-wrapper {
+            margin-bottom: 30px;
+        }
+
+        ul {
+            justify-content: center;
+        }
+        
+    }
+
+    @media(max-width: 480px) {
+
+        ul {
+            gap: 10px;
+
+            li {
+
+                svg {
+                    width: 60px;
+                }
+            }
+            
+
+            li:nth-child(2),
+            li:nth-child(3) {
+                svg {
+                    width: 67px;
+                }
+
+            }
+
+        }
+
+        .button {
+            min-width: 0;
+            width: 100%;
+        }
+    }
+}
+
+.hero-small {
+    background-image: url(../images/hero-bgr.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+    padding: 110px 0 30px;
+    display: flex;
+    align-items: flex-end;
+
+    h2 {
+        font-weight: 700;
+    }
+
+    @media(max-width:768px) {
+        h2 {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.investment {
+    padding: 40px 0 60px;
+    background-color: #F6F6F6;
+
+    ul {
+        margin-bottom: 30px;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    @media(max-width: 480px) {
+        ul {
+            gap: 5px;
+        }
+    }
+}
+
+.trades {
+    padding: 60px 0;
+    background-color: #FCFCFE;
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        gap: 100px;
+        margin-bottom: 60px;
+    }
+
+    h3 {
+        font-weight: 900;
+        margin-bottom: 10px;
+    }
+
+    .grid-staging {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px 30px;
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+
+    .grid-item {
+        background-image: url(../images/grid-bgr.jpg);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        padding: 50px 20px 20px;
+        border-radius: 20px;
+        position: relative;
+
+        .icon-wrapper {
+            position: absolute;
+            left: 20px;
+            top: 0;
+            transform: translate(0,-50%);
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .trades-list {
+
+        .dot {
+            margin-top: 10px;
+            min-width: 6px;
+            margin-right: 5px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #2A44DE;
+        }
+
+        .withdraw-box {
+            background-color: #37A9F1;
+            padding: 0 20px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+            margin-bottom: 60px;
+
+            svg {
+                min-width: 57px;
+            }
+
+            >div {
+                width: 120px;
+                border-radius: 20px;
+                padding: 28px 10px;
+                background-color: #F6F6F6;
+
+                p {
+                    font-size: 13px;
+                    color: #1B1E29;
+                    font-weight: 700;
+                    line-height: 14px;
+                }
+            }
+
+            span {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    .box-wrapper {
+        gap: 10px;
+
+        .box-item {
+            border-radius: 20px;
+            height: 60px;
+            background-color: #37A9F1;
+            color: #FCFCFE;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 38px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            flex: 1 1 auto;
+
+            &--dark-blue {
+                background-color: #2A44DE;
+            }
+        }
+    }
+
+    @media(max-width: 991px) {
+        .grid {
+            display: block;
+        }
+
+        .trades-list {
+            .withdraw-box {
+                margin-bottom: 20px;
+            }
+
+        }
+
+        .grid-staging {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+.feedback {
+    padding: 60px 0;
+    background-color: #F6F6F6;
+
+    .grid {
+        columns: 250px;
+        column-gap: 30px;
+    }
+
+    .grid-item {
+        background-color: #FFFFFF;
+        padding: 20px;
+        margin-bottom: 30px;
+        break-inside: avoid-column;
+        position: relative;
+
+        p {
+            font-size: 14px;
+            line-height: 19px;
+            margin-bottom: 0;
+        }
+    }
+
+    .flag {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 10px;
+
+        .flag-img {
+            width: 30px;
+            height: 30px;
+            overflow: hidden;
+            border-radius: 50%;
+            background-color: #ACACAC;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+
+        h4 {
+            color: #181B29;
+        }
+    }
+
+    .score {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        position: absolute;
+        right: 6px;
+        top: 7px;
+
+        li {
+            letter-spacing: 0.05px;
+            color: #6A6A6A;
+            font-size: 13px;
+        }
+    }
+}
+
+.text-section {
+    background-color: #FCFCFE;
+    padding: 30px 0;
+    min-height: 65vh;
+
+    p {
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 16px;
+        color: #181B29;
+        font-family: "Roboto", sans-serif;
+    }
+}

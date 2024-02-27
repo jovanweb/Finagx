@@ -1,0 +1,60 @@
+/* ------------------------------------*\
+    #PAGE
+\*------------------------------------ */
+
+
+html {
+  min-height: 100vh;
+  color: $color-text;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 400;
+}
+
+address,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+p,
+pre,
+dl,
+ol,
+ul,
+figure,
+hr,
+table,
+fieldset {
+  margin-bottom: $spacing-unit;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+i {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 700;
+}
+
+p, .text-normal {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: $base-font-family;
+  font-weight: 400;
+}
+
+main {
+  overflow: hidden;
+}
